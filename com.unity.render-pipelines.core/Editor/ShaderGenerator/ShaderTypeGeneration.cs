@@ -1207,6 +1207,8 @@ namespace UnityEditor.Rendering
                         EmitPrimitiveType(floatPrecision, 4, arraySize, field.Name, "", m_ShaderFields);
                     else if (fieldType == typeof(Vector2Int))
                         EmitPrimitiveType(PrimitiveType.Int, 2, arraySize, field.Name, "", m_ShaderFields);
+                    else if (fieldType == typeof(Vector3Int))
+                        EmitPrimitiveType(PrimitiveType.Int, 3, arraySize, field.Name, "", m_ShaderFields);
                     else if (fieldType == typeof(ShaderGenUInt4))
                         EmitPrimitiveType(PrimitiveType.UInt, 4, arraySize, field.Name, "", m_ShaderFields);
                     else if (fieldType == typeof(Matrix4x4))
